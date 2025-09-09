@@ -28,6 +28,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    color: #034078;
 }
 
 nav ul li {
