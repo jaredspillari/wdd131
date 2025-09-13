@@ -66,6 +66,11 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+h3,
+h2 {
+    text-align: center;
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -74,8 +79,9 @@ main {
 .card h2 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5rem;
-    color: #034078
+    color: #034078;
 }
+
 
 .me_photo {
     width: 180px;
@@ -93,8 +99,13 @@ main {
     border-radius: 4px;
 }
 
-/* Bloques con imagen y texto */
-.me_block,
+.me_block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
 .flag_block {
     display: flex;
     /* pone imagen y texto en línea */
@@ -106,17 +117,24 @@ main {
     /* espacio debajo del bloque */
 }
 
-.me_block img,
+.me_block img {
+    flex-shrink: 0;
+}
+
 .flag_block img {
     flex-shrink: 0;
     /* evita que la imagen se reduzca */
 }
 
-.me_block p,
+.me_block p {
+    flex: 1;
+    text-align: left;
+}
+
 .flag_block p {
     flex: 1;
     /* párrafo ocupa todo el espacio restante */
-    text-align: left;
+    text-align: right;
     /* alinea texto a la derecha */
 }
 
