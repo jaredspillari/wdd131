@@ -77,6 +77,49 @@ main {
     color: #034078
 }
 
+.me_photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    border: 3px solid #005f99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.flag {
+    width: 250px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Bloques con imagen y texto */
+.me_block,
+.flag_block {
+    display: flex;
+    /* pone imagen y texto en línea */
+    align-items: flex-start;
+    /* alinea verticalmente arriba */
+    gap: 15px;
+    /* espacio entre imagen y texto */
+    margin-bottom: 1rem;
+    /* espacio debajo del bloque */
+}
+
+.me_block img,
+.flag_block img {
+    flex-shrink: 0;
+    /* evita que la imagen se reduzca */
+}
+
+.me_block p,
+.flag_block p {
+    flex: 1;
+    /* párrafo ocupa todo el espacio restante */
+    text-align: left;
+    /* alinea texto a la derecha */
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
