@@ -38,12 +38,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px
+    border-radius: 5px; 
+    color: #FFFFFF;
 }
 
 nav ul li a:hover {
     background-color: #00A6FB;
-    color: #FFFFFF;
+    color: #034078;
     border: 10px;
     padding: 0.5rem 1rem;
 }
@@ -76,11 +77,19 @@ h2 {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card h2 {
+.card h2 , h3 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5rem;
     color: #034078;
 }
+
+.card ul{
+    text-align: center;
+    list-style: none;
+    gap: 250px;
+    padding: 0;
+}
+
 
 
 .me_photo {
