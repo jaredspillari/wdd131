@@ -146,7 +146,7 @@ h2 {
 
 .flag_block p {
     flex: 1;
-    /* párrafo ocupa todo el espacio restante */
+    /*  ocupa todo el espacio restante */
     text-align: right;
     /* alinea texto a la derecha */
 }
