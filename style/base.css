@@ -83,11 +83,15 @@ h2 {
     color: #034078;
 }
 
-.card ul{
+.card ul li {
     text-align: center;
     list-style: none;
     gap: 250px;
     padding: 0;
+    padding: 0.5rem 1rem;  
+    margin: 0.5rem ;       
+    min-width: 40px;
+    min-height: 40px;
 }
 
 
