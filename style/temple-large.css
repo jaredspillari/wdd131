@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .temple-container {
         grid-template-columns: repeat(3, 1fr);
         /* Desktop: 3 columnas */
