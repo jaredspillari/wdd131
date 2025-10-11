@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples - Jeffrey Castellanos</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jeffrey Castellanos - Filtered Temples Page">
+    <meta name="author" content="Jeffrey Castellanos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/filtered-temple.css">
+    <script defer src="script/getdates.js"></script>
+    <script defer src="script/filtered-temple.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger">☰</button>
+        <nav class="navbar">
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="page-title">Home</h2>
+        <div class="temple-container"></div>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> © Jeffrey Castellanos</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector('.hamburger');
+        const nav = document.querySelector('.navbar');
+        btn.addEventListener('click', () => nav.classList.toggle('show'));
+    </script>
+</body>
+
+</html>
