@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+:root {
+    --primary-color: #b30000;
+    /* Deep red */
+    --secondary-color: #444444;
+    /* Dark gray */
+    --light-gray: #f2f2f2;
+    /* Soft background */
+    --text-color: #222;
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 2rem;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+section {
+    margin: 2rem 0;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.color-sample.red {
+    background-color: var(--primary-color);
+}
+
+.color-sample.gray {
+    background-color: var(--secondary-color);
+}
+
+.color-sample.lightgray {
+    background-color: var(--light-gray);
+}
+
+.wireframe {
+    border: 2px dashed var(--secondary-color);
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
