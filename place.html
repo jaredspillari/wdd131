@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Country</title>
+    <link rel="stylesheet" href="style/planstyle.css">
+    <script defer src="script/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring Guatemala</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Tourism</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/Volcano-fuego.webp">
+            <source media="(min-width: 768px)" srcset="images/tikal_temple1">
+            <img src="images/textiles1.jpg" alt="Featured image of Guatemala">
+        </picture>
+    </section>
+
+    <section class="weather">
+        <h2>Weather <span class="emoji">⛅</span></h2>
+        <p>Temperature: <span id="temp">18</span> °C</p>
+        <p>Wind: <span id="wind">6</span> km/h</p>
+        <p>Wind Chill: <span id="windchill">N/A</span></p>
+    </section>
+    <footer>
+        <p>&copy; <span id="year"></span> - Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
